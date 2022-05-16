@@ -16,7 +16,6 @@ export const todoReducer = ( state = [], action ) => {
                     ? { ...todo, done: !todo.done }
                     : todo
             );
-
         case 'toggle-old':
             return state.map( todo => {
 
@@ -34,6 +33,4 @@ export const todoReducer = ( state = [], action ) => {
         default:
             return state;
     }
-
-
 }
